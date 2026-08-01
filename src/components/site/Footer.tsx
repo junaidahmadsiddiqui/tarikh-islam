@@ -8,7 +8,8 @@ const COLS: { title: string; links: { label: string; to: string }[] }[] = [
       { label: "Timeline", to: "/timeline" },
       { label: "Prophet ﷺ", to: "/prophet" },
       { label: "Khulafa", to: "/khulafa" },
-      { label: "Ottoman", to: "/ottoman" },
+      { label: "Empires", to: "/empires" },
+      { label: "Palestine", to: "/palestine" },
       { label: "Heroes", to: "/heroes" },
     ],
   },
@@ -19,7 +20,7 @@ const COLS: { title: string; links: { label: string; to: string }[] }[] = [
       { label: "Videos", to: "/videos" },
       { label: "Library", to: "/library" },
       { label: "AI Assistant", to: "/assistant" },
-      { label: "Countries", to: "/countries" },
+      { label: "Daily History (Coming soon)", to: "" },
     ],
   },
   {
@@ -30,6 +31,7 @@ const COLS: { title: string; links: { label: string; to: string }[] }[] = [
       { label: "Contact", to: "/contact" },
       { label: "Privacy", to: "/privacy" },
       { label: "Terms", to: "/terms" },
+      { label: "Donate (Future)", to: "/" },
     ],
   },
 ];

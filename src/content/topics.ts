@@ -248,6 +248,56 @@ export const TOPICS: Record<string, Topic> = {
       { heading: "Modern Scholarship", body: "Works by Martin Lings, Muhammad al-Ghazali, Adil Salahi, Jonathan Brown, and others — with editorial notes distinguishing established facts from interpretations." },
     ],
   },
+  palestine: {
+    id: "palestine",
+    path: "/palestine",
+    navLabel: "Palestine",
+    breadcrumb: "Palestine",
+    title: "History of Palestine — Tarikh-ul-Islam",
+    description:
+      "Explore the Islamic history of Palestine (Filastin), Al-Quds (Jerusalem), Masjid Al-Aqsa, and the major events from the time of the Prophets to the modern era.",
+    eyebrow: "Sacred Land",
+    heroTitle: "History of Palestine",
+    heroSubtitle:
+      "The land of the Prophets, Masjid Al-Aqsa, and centuries of Islamic civilization.",
+    sections: [
+      {
+        heading: "The Blessed Land",
+        body:
+          "Palestine is one of the most blessed regions in Islamic history. It is home to Masjid Al-Aqsa, the first Qiblah of the Muslims and the place from which Prophet Muhammad ﷺ ascended during Al-Isra' wal-Mi'raj.",
+      },
+      {
+        heading: "Prophets in Palestine",
+        body:
+          "Many Prophets of Allah (peace be upon them) lived, preached, or were connected to this land, including Ibrahim (AS), Lut (AS), Dawud (AS), Sulayman (AS), Zakariyya (AS), Yahya (AS), and Isa (AS).",
+      },
+      {
+        heading: "Islamic Conquest",
+        body:
+          "In 638 CE (17 AH), Jerusalem peacefully came under Muslim rule during the Caliphate of Umar ibn al-Khattab (RA). The city was handed over peacefully, and the Pact of Umar guaranteed protection for its inhabitants and religious sites.",
+      },
+      {
+        heading: "The Crusades & Salahuddin",
+        body:
+          "Jerusalem was captured during the First Crusade in 1099 CE. Nearly ninety years later, Sultan Salahuddin al-Ayyubi liberated the city after the Battle of Hattin in 1187 CE, restoring Muslim rule while showing remarkable mercy to its people.",
+      },
+      {
+        heading: "Ottoman Era",
+        body:
+          "Palestine remained under Ottoman administration for nearly four centuries (1516–1917). During this period, Jerusalem, Al-Aqsa, and many Islamic institutions were preserved and developed.",
+      },
+      {
+        heading: "Modern History",
+        body:
+          "The twentieth century brought significant political changes, including the British Mandate, the 1948 Arab-Israeli War, and the continuing Israeli-Palestinian conflict. Understanding these events requires careful study of multiple historical sources and perspectives.",
+      },
+      {
+        heading: "Authentic Sources",
+        body:
+          "This section draws upon the Qur'an, authentic Hadith, classical Muslim historians, and modern academic research, clearly distinguishing established historical facts from differing scholarly interpretations.",
+      },
+    ],
+  },
   videos: {
     id: "videos",
     path: "/videos",
