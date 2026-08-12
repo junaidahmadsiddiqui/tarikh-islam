@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AbbasidRouteImport } from './routes/abbasid'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as AlAndalusRouteImport } from './routes/al-andalus'
 import { Route as AssistantRouteImport } from './routes/assistant'
 import { Route as BattlesRouteImport } from './routes/battles'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -55,6 +56,11 @@ const AbbasidRoute = AbbasidRouteImport.update({
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AlAndalusRoute = AlAndalusRouteImport.update({
+  id: '/al-andalus',
+  path: '/al-andalus',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AssistantRoute = AssistantRouteImport.update({
@@ -207,6 +213,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/abbasid': typeof AbbasidRoute
   '/about': typeof AboutRoute
+  '/al-andalus': typeof AlAndalusRoute
   '/assistant': typeof AssistantRoute
   '/battles': typeof BattlesRoute
   '/contact': typeof ContactRoute
@@ -241,6 +248,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/abbasid': typeof AbbasidRoute
   '/about': typeof AboutRoute
+  '/al-andalus': typeof AlAndalusRoute
   '/assistant': typeof AssistantRoute
   '/battles': typeof BattlesRoute
   '/contact': typeof ContactRoute
@@ -273,6 +281,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/abbasid': typeof AbbasidRoute
   '/about': typeof AboutRoute
+  '/al-andalus': typeof AlAndalusRoute
   '/assistant': typeof AssistantRoute
   '/battles': typeof BattlesRoute
   '/contact': typeof ContactRoute
@@ -309,6 +318,7 @@ export interface FileRouteTypes {
     | '/'
     | '/abbasid'
     | '/about'
+    | '/al-andalus'
     | '/assistant'
     | '/battles'
     | '/contact'
@@ -343,6 +353,7 @@ export interface FileRouteTypes {
     | '/'
     | '/abbasid'
     | '/about'
+    | '/al-andalus'
     | '/assistant'
     | '/battles'
     | '/contact'
@@ -374,6 +385,7 @@ export interface FileRouteTypes {
     | '/'
     | '/abbasid'
     | '/about'
+    | '/al-andalus'
     | '/assistant'
     | '/battles'
     | '/contact'
@@ -409,6 +421,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AbbasidRoute: typeof AbbasidRoute
   AboutRoute: typeof AboutRoute
+  AlAndalusRoute: typeof AlAndalusRoute
   AssistantRoute: typeof AssistantRoute
   BattlesRoute: typeof BattlesRoute
   ContactRoute: typeof ContactRoute
@@ -455,6 +468,13 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/al-andalus': {
+      id: '/al-andalus'
+      path: '/al-andalus'
+      fullPath: '/al-andalus'
+      preLoaderRoute: typeof AlAndalusRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/assistant': {
@@ -708,6 +728,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AbbasidRoute: AbbasidRoute,
   AboutRoute: AboutRoute,
+  AlAndalusRoute: AlAndalusRoute,
   AssistantRoute: AssistantRoute,
   BattlesRoute: BattlesRoute,
   ContactRoute: ContactRoute,
