@@ -91,9 +91,9 @@ export function Sections() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="relative overflow-hidden rounded-3xl shadow-elegant"
+            className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-elegant"
           >
-            <img src={manuscript} alt="Illuminated Islamic manuscript" width={1200} height={900} loading="lazy" className="h-full w-full object-cover" />
+            <img src={manuscript} alt="Illuminated Islamic manuscript" width={1200} height={900} loading="lazy" className="h-full w-full object-cover object-[center_65%]" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 30 }}
