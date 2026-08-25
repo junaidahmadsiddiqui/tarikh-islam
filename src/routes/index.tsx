@@ -7,14 +7,14 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Tarikh-ul-Islam — Explore 1400 Years of Islamic History" },
+      { title: "Tarikh-ul-Islam — Explore the Legacy of Islam" },
       {
         name: "description",
         content:
-          "An interactive, source-referenced platform for learning Islamic history: Seerah, Khulafa Rashidun, empires, heroes, sciences, and more.",
+          "An interactive, source-referenced platform for learning Islamic history: Seerah, Khulafa Rashidin, empires, heroes, sciences, and more.",
       },
-      { property: "og:title", content: "Tarikh-ul-Islam — Explore 1400 Years of Islamic History" },
-      { property: "og:description", content: "An interactive, source-referenced platform for learning Islamic history: Seerah, Khulafa Rashidun, empires, heroes, sciences, and more." },
+      { property: "og:title", content: "Tarikh-ul-Islam — Explore the Legacy of Islam" },
+      { property: "og:description", content: "An interactive, source-referenced platform for learning Islamic history: Seerah, Khulafa Rashidin, empires, heroes, sciences, and more." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

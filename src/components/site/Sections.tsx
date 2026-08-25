@@ -13,7 +13,7 @@ const SECTIONS: { icon: typeof BookOpen; title: string; desc: string; tag: strin
   { icon: Compass, title: "Arabia Before Islam", desc: "Geography, tribes, Kaaba, society, trade, and pre-Islamic culture.", tag: "Origins", to: "/pre-islam" },
   { icon: BookOpen, title: "Life of Prophet ﷺ", desc: "From birth in Makkah to the Farewell Hajj — the complete Seerah.", tag: "Seerah", to: "/prophet" },
   { icon: MapPin, title: "The Hijrah Journey", desc: "Animated route of the migration to Madinah with historical stops.", tag: "Interactive", to: "/hijrah" },
-  { icon: Crown, title: "Khulafa Rashidun", desc: "Abu Bakr, Umar, Uthman, and Ali — administration, expansion, justice.", tag: "Caliphate", to: "/khulafa" },
+  { icon: Crown, title: "Khulafa Rashidin", desc: "Abu Bakr, Umar, Uthman, and Ali — administration, expansion, justice.", tag: "Caliphate", to: "/khulafa" },
   { icon: Scroll, title: "Islamic Empires", desc: "Umayyad, Abbasid, Al-Andalus, Ottoman, Mughal, Safavid.", tag: "Dynasties", to: "/ottoman" },
   { icon: Sword, title: "Heroes of Islam", desc: "Salahuddin, Khalid ibn al-Walid, Muhammad Al-Fatih, and more.", tag: "Legends", to: "/heroes" },
   { icon: FlaskConical, title: "Golden Age Science", desc: "House of Wisdom, medicine, astronomy, algebra, engineering.", tag: "Science", to: "/golden-age" },
@@ -21,7 +21,7 @@ const SECTIONS: { icon: typeof BookOpen; title: string; desc: string; tag: strin
   { icon: Video, title: "Documentaries", desc: "Cinematic animated videos for every era and every age group.", tag: "Watch", to: "/videos" },
   { icon: Brain, title: "Interactive Quiz", desc: "MCQs, guess-the-person, timeline ordering, badges, leaderboard.", tag: "Play", to: "/quiz" },
   { icon: Users, title: "Companions & Scholars", desc: "Biographies of Sahaba, Imams, muhaddithin, and mujaddidin.", tag: "People", to: "/scholars" },
-  { icon: Sparkles, title: "AI History Assistant", desc: "Ask anything — answered only from verified sources with citations.", tag: "New", to: "/assistant" },
+  { icon: Sparkles, title: "AI History Assistant", desc: "Ask questions about Islamic history — answered from verified sources with citations.", tag: "New", to: "/assistant" },
 ];
 
 

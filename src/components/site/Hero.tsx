@@ -75,17 +75,17 @@ export function Hero() {
             The Complete Interactive Islamic History Platform
           </motion.div>
 
-          <h1 className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-foreground">
+          <h1 className="mt-6 font-display text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-foreground">
             Explore{" "}
-            <span className="text-gradient-gold">1400 Years</span>
+            <span className="text-gradient-gold">the Lagacy</span>
             <br />
-            of Islamic History
+            of Islam
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Journey through the Seerah of the Prophet ﷺ, the Rightly-Guided Caliphs,
-            the great empires, scholars, and scientists — all rendered as beautifully
-            interactive stories, timelines, and maps.
+            Journey through the earliest Prophets and the Seerah
+            of Prophet Muhammad ﷺ to the Khulafa al-Rashidin, great civilizations and
+            empires, scholars, scientists and the modern era — through authentic historical narratives, timelines, and maps.
           </p>
 
           {/* Search */}
@@ -128,7 +128,7 @@ export function Hero() {
           {/* Stats */}
           <div className="mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
             {[
-              { n: "1400+", l: "Years Covered" },
+              { n: "100+", l: "Historical Eras" },
               { n: "500+", l: "Articles" },
               { n: "60+", l: "Interactive Maps" },
             ].map((s, i) => (

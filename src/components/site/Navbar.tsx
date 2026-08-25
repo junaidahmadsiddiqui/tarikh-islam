@@ -51,7 +51,7 @@ export function Navbar() {
               <span className="text-gradient-gold">-ul-Islam</span>
             </span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              1400 Years of History
+              THE HISTORY OF ISLAM
             </span>
           </div>
         </Link>
