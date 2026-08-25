@@ -41,7 +41,7 @@ export const TOPICS: Record<string, Topic> = {
     breadcrumb: "Timeline",
     title: "Timeline of Islamic History — Tarikh-ul-Islam",
     description: "An interactive timeline of Islamic history from the birth of the Prophet ﷺ through the modern era.",
-    eyebrow: "1400 Years",
+    eyebrow: "Through the Ages",
     heroTitle: "The Timeline of Islamic History",
     heroSubtitle: "From revelation in Makkah to the empires, scholars, and nations of today.",
     sections: [
@@ -137,12 +137,12 @@ export const TOPICS: Record<string, Topic> = {
   khulafa: {
     id: "khulafa",
     path: "/khulafa",
-    navLabel: "Khulafa Rashidun",
-    breadcrumb: "Khulafa Rashidun",
+    navLabel: "Khulafa Rashidin",
+    breadcrumb: "Khulafa Rashidin",
     title: "The Rightly-Guided Caliphs — Tarikh-ul-Islam",
     description: "Abu Bakr, Umar, Uthman, and Ali — the four Rightly-Guided Caliphs (632 – 661 CE).",
     eyebrow: "632 – 661 CE",
-    heroTitle: "The Khulafa Rashidun",
+    heroTitle: "The Khulafa Rashidin",
     heroSubtitle: "Successors of the Prophet ﷺ, guardians of the ummah.",
     sections: [
       { heading: "Abu Bakr as-Siddiq (RA)", body: "The first caliph, closest companion of the Prophet ﷺ. Unified Arabia through the Ridda wars and initiated the compilation of the Qur'an." },
@@ -217,43 +217,43 @@ export const TOPICS: Record<string, Topic> = {
     ],
   },
   "al-andalus": {
-  id: "al-andalus",
-  path: "/al-andalus",
-  navLabel: "Al-Andalus",
-  breadcrumb: "Al-Andalus",
-  title: "Al-Andalus — Tarikh-ul-Islam",
-  description: "The history of Muslim Spain from the Umayyad conquest to the fall of Granada in 1492.",
-  eyebrow: "711 – 1492 CE",
-  heroTitle: "Al-Andalus (Muslim Spain)",
-  heroSubtitle: "Eight centuries of Islamic civilization in the Iberian Peninsula.",
+    id: "al-andalus",
+    path: "/al-andalus",
+    navLabel: "Al-Andalus",
+    breadcrumb: "Al-Andalus",
+    title: "Al-Andalus — Tarikh-ul-Islam",
+    description: "The history of Muslim Spain from the Umayyad conquest to the fall of Granada in 1492.",
+    eyebrow: "711 – 1492 CE",
+    heroTitle: "Al-Andalus (Muslim Spain)",
+    heroSubtitle: "Eight centuries of Islamic civilization in the Iberian Peninsula.",
 
-  sections: [
-    {
-      heading: "The Conquest of Iberia (711 CE)",
-      body: "Tariq ibn Ziyad crossed the Strait of Gibraltar with a Muslim army and defeated King Roderic at the Battle of Guadalete, beginning Islamic rule in much of the Iberian Peninsula."
-    },
-    {
-      heading: "The Umayyad Emirate & Caliphate",
-      body: "Abd al-Rahman I escaped the Abbasid Revolution and established the Umayyad Emirate in Córdoba in 756 CE. Later, Abd al-Rahman III proclaimed the Caliphate of Córdoba, making it one of the greatest cities in the world."
-    },
-    {
-      heading: "The Golden Age",
-      body: "Muslims, Christians, and Jews contributed to remarkable advances in science, medicine, mathematics, architecture, philosophy, and literature. Córdoba, Seville, and Toledo became renowned centers of learning."
-    },
-    {
-      heading: "Architecture",
-      body: "Masterpieces such as the Great Mosque of Córdoba, Madinat al-Zahra, and the Alhambra Palace demonstrate the artistic and architectural brilliance of Al-Andalus."
-    },
-    {
-      heading: "The Reconquista",
-      body: "Over several centuries, Christian kingdoms gradually reconquered Muslim territories. The final Muslim kingdom, Granada, fell in 1492, ending nearly 800 years of Islamic rule in Iberia."
-    },
-    {
-      heading: "Legacy",
-      body: "Al-Andalus left a lasting influence on European science, agriculture, language, architecture, and culture, helping preserve and expand knowledge that later contributed to the Renaissance."
-    }
-  ]
-},
+    sections: [
+      {
+        heading: "The Conquest of Iberia (711 CE)",
+        body: "Tariq ibn Ziyad crossed the Strait of Gibraltar with a Muslim army and defeated King Roderic at the Battle of Guadalete, beginning Islamic rule in much of the Iberian Peninsula."
+      },
+      {
+        heading: "The Umayyad Emirate & Caliphate",
+        body: "Abd al-Rahman I escaped the Abbasid Revolution and established the Umayyad Emirate in Córdoba in 756 CE. Later, Abd al-Rahman III proclaimed the Caliphate of Córdoba, making it one of the greatest cities in the world."
+      },
+      {
+        heading: "The Golden Age",
+        body: "Muslims, Christians, and Jews contributed to remarkable advances in science, medicine, mathematics, architecture, philosophy, and literature. Córdoba, Seville, and Toledo became renowned centers of learning."
+      },
+      {
+        heading: "Architecture",
+        body: "Masterpieces such as the Great Mosque of Córdoba, Madinat al-Zahra, and the Alhambra Palace demonstrate the artistic and architectural brilliance of Al-Andalus."
+      },
+      {
+        heading: "The Reconquista",
+        body: "Over several centuries, Christian kingdoms gradually reconquered Muslim territories. The final Muslim kingdom, Granada, fell in 1492, ending nearly 800 years of Islamic rule in Iberia."
+      },
+      {
+        heading: "Legacy",
+        body: "Al-Andalus left a lasting influence on European science, agriculture, language, architecture, and culture, helping preserve and expand knowledge that later contributed to the Renaissance."
+      }
+    ]
+  },
   scholars: {
     id: "scholars",
     path: "/scholars",

@@ -98,7 +98,7 @@ Topics include:
 
 The platform will continue through major periods of Muslim history, including:
 
-* Khulafa al-Rashidun
+* Khulafa al Rashidin
 * Umayyads
 * Abbasids
 * Islamic Golden Age
