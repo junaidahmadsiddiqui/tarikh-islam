@@ -94,7 +94,7 @@ Topics include:
 * Farewell Sermon
 * His passing ﷺ
 
-### 🕌 After the Prophet ﷺ
+### 🕌 After the Prophet Muhammad ﷺ
 
 The platform will continue through major periods of Muslim history, including:
 

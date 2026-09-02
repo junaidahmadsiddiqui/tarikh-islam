@@ -58,6 +58,18 @@ const scientists: Entry[] = [
 
 const heroes: Entry[] = [
   {
+    slug: "khalid-ibn-al-walid",
+    name: "Khalid ibn al-Walid (RA)",
+    subtitle: "Sayf-Allah al-Maslul",
+    era: "d. 642 CE",
+    summary: "The 'Drawn Sword of Allah' — undefeated commander of the early Muslim conquests.",
+    sections: [
+      { heading: "Companion", body: "Khalid embraced Islam after Hudaybiyyah and quickly became the most trusted military commander of the Prophet Muhammad ﷺ." },
+      { heading: "Ridda & Beyond", body: "He led decisive campaigns in the Ridda wars, then the conquests of Iraq and Syria, culminating in the Battle of Yarmouk (636)." },
+    ],
+  },
+
+  {
     slug: "salahuddin",
     name: "Salahuddin al-Ayyubi",
     subtitle: "Liberator of Jerusalem",
@@ -68,17 +80,7 @@ const heroes: Entry[] = [
       { heading: "Hittin & Jerusalem", body: "After the decisive victory at Hittin in 1187, Salahuddin entered Jerusalem peacefully — his justice toward its inhabitants is recorded even by his opponents." },
     ],
   },
-  {
-    slug: "khalid-ibn-al-walid",
-    name: "Khalid ibn al-Walid (RA)",
-    subtitle: "Sayf-Allah al-Maslul",
-    era: "d. 642 CE",
-    summary: "The 'Drawn Sword of Allah' — undefeated commander of the early Muslim conquests.",
-    sections: [
-      { heading: "Companion", body: "Khalid embraced Islam after Hudaybiyyah and quickly became the most trusted military commander of the Prophet ﷺ." },
-      { heading: "Ridda & Beyond", body: "He led decisive campaigns in the Ridda wars, then the conquests of Iraq and Syria, culminating in the Battle of Yarmouk (636)." },
-    ],
-  },
+  
   {
     slug: "muhammad-al-fatih",
     name: "Sultan Muhammad al-Fatih",
@@ -100,7 +102,7 @@ const countries: Entry[] = [
     era: "Present",
     summary: "Home of the two holy sanctuaries — Makkah and Madinah — and the birthplace of Islam.",
     sections: [
-      { heading: "Sacred Geography", body: "Makkah, home of the Kaaba, and Madinah, city of the Prophet ﷺ, receive millions of pilgrims each year for Hajj and Umrah." },
+      { heading: "Sacred Geography", body: "Makkah, home of the Kaaba, and Madinah, city of the Prophet Muhammad ﷺ, receive millions of pilgrims each year for Hajj and Umrah." },
       { heading: "History", body: "Ruled successively by Quraysh, the Rashidun, Umayyads, Abbasids, Sharifs of Makkah, and the Saudi state established in the 18th century." },
     ],
   },
@@ -161,7 +163,7 @@ export const CATEGORIES: Record<Category["id"], Category> = {
     eyebrow: "Legends",
     heroTitle: "Heroes of Islam",
     heroSubtitle: "Courage, sacrifice, and justice across the centuries.",
-    intro: "From the companions of the Prophet ﷺ to the sultans and generals of later eras — the heroes whose stories inspire the ummah.",
+    intro: "From the companions of the Prophet Muhammad ﷺ to the sultans and generals of later eras — the heroes whose stories inspire the ummah.",
     entries: heroes,
   },
   countries: {

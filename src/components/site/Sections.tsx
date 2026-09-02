@@ -11,23 +11,23 @@ import pattern from "@/assets/pattern-geometric.jpg";
 
 const SECTIONS: { icon: typeof BookOpen; title: string; desc: string; tag: string; to: string }[] = [
   { icon: Compass, title: "Arabia Before Islam", desc: "Geography, tribes, Kaaba, society, trade, and pre-Islamic culture.", tag: "Origins", to: "/pre-islam" },
-  { icon: BookOpen, title: "Life of Prophet ﷺ", desc: "From birth in Makkah to the Farewell Hajj — the complete Seerah.", tag: "Seerah", to: "/prophet" },
+  { icon: BookOpen, title: "Life of Prophet Muhammad ﷺ", desc: "From birth in Makkah to the Farewell Hajj — the complete Seerah.", tag: "Seerah", to: "/prophet" },
   { icon: MapPin, title: "The Hijrah Journey", desc: "Animated route of the migration to Madinah with historical stops.", tag: "Interactive", to: "/hijrah" },
   { icon: Crown, title: "Khulafa Rashidin", desc: "Abu Bakr, Umar, Uthman, and Ali — administration, expansion, justice.", tag: "Caliphate", to: "/khulafa" },
   { icon: Scroll, title: "Islamic Empires", desc: "Umayyad, Abbasid, Al-Andalus, Ottoman, Mughal, Safavid.", tag: "Dynasties", to: "/ottoman" },
-  { icon: Sword, title: "Heroes of Islam", desc: "Salahuddin, Khalid ibn al-Walid, Muhammad Al-Fatih, and more.", tag: "Legends", to: "/heroes" },
-  { icon: FlaskConical, title: "Golden Age Science", desc: "House of Wisdom, medicine, astronomy, algebra, engineering.", tag: "Science", to: "/golden-age" },
+  { icon: Sword, title: "Heroes of Islam", desc: "Khalid ibn al-Walid, Salahuddin, Muhammad Al-Fatih, and more.", tag: "Legends", to: "/heroes" },
+  { icon: FlaskConical, title: "Golden Age Science", desc: "Algorithms, early robotics, optics, clinical surgery, and the House of Wisdom.", tag: "Science", to: "/golden-age" },
   { icon: Globe2, title: "Islamic Countries", desc: "Interactive atlas of nations, mosques, dynasties, and scholars.", tag: "Atlas", to: "/countries" },
   { icon: Video, title: "Documentaries", desc: "Cinematic animated videos for every era and every age group.", tag: "Watch", to: "/videos" },
   { icon: Brain, title: "Interactive Quiz", desc: "MCQs, guess-the-person, timeline ordering, badges, leaderboard.", tag: "Play", to: "/quiz" },
-  { icon: Users, title: "Companions & Scholars", desc: "Biographies of Sahaba, Imams, muhaddithin, and mujaddidin.", tag: "People", to: "/scholars" },
+  { icon: Users, title: "Companions & Scholars", desc: "Biographies of Sahaba, Ahl al-Bayt, Imams, muhaddithin, and mujaddidin.", tag: "People", to: "/scholars" },
   { icon: Sparkles, title: "AI History Assistant", desc: "Ask questions about Islamic history — answered from verified sources with citations.", tag: "New", to: "/assistant" },
 ];
 
 
 export function Sections() {
   return (
-    <section id="timeline" className="relative py-24 sm:py-32">
+    <section id="timeline" className="relative pt-12 pb-8 sm:pt-16 sm:pb-12">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
