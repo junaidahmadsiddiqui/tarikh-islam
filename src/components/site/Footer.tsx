@@ -52,7 +52,7 @@ export function Footer() {
             </Link>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground leading-relaxed">
               An interactive, source-referenced platform for learning the complete
-              history of Islam — from Arabia before the Prophet ﷺ to the modern era.
+              history of Islam — from Arabia before the Prophet Muhammad ﷺ to the modern era.
             </p>
             <form className="mt-6 flex max-w-sm items-center gap-2 rounded-full border border-border bg-background p-1.5">
               <Mail className="ml-2 h-4 w-4 text-muted-foreground" />
