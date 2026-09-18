@@ -1,13 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Moon, Sun, Search, Globe, Sparkles } from "lucide-react";
+import { Menu, X, Moon, Sun, Search, Languages, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const NAV_LINKS: { label: string; to: string }[] = [
   { label: "Timeline", to: "/timeline" },
   { label: "Prophet ﷺ", to: "/prophet" },
   { label: "Khulafa", to: "/khulafa" },
-  { label: "Empires", to: "/ottoman" },
+  { label: "Empires", to: "/empires" },
   { label: "Heroes", to: "/heroes" },
   { label: "Scientists", to: "/scientists" },
   { label: "Countries", to: "/countries" },
@@ -82,7 +83,7 @@ export function Navbar() {
             aria-label="Language"
             className="hidden sm:grid h-10 w-10 place-items-center rounded-full text-foreground/80 hover:bg-accent transition-colors"
           >
-            <Globe className="h-4 w-4" />
+            <LanguageSwitcher/> {/* here Lanuguages used before dropdown feature*/}
           </button>
           <button
             aria-label="Toggle theme"

@@ -17,6 +17,7 @@ import { Route as AssistantRouteImport } from './routes/assistant'
 import { Route as BattlesRouteImport } from './routes/battles'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CountriesRouteImport } from './routes/countries'
+import { Route as EmpiresRouteImport } from './routes/empires'
 import { Route as FirstWahiRouteImport } from './routes/first-wahi'
 import { Route as GoldenAgeRouteImport } from './routes/golden-age'
 import { Route as HeroesRouteImport } from './routes/heroes'
@@ -38,6 +39,8 @@ import { Route as UmayyadRouteImport } from './routes/umayyad'
 import { Route as VideosRouteImport } from './routes/videos'
 import { Route as CountriesIndexRouteImport } from './routes/countries.index'
 import { Route as CountriesSlugRouteImport } from './routes/countries.$slug'
+import { Route as EmpiresIndexRouteImport } from './routes/empires.index'
+import { Route as EmpiresSlugRouteImport } from './routes/empires.$slug'
 import { Route as HeroesIndexRouteImport } from './routes/heroes.index'
 import { Route as HeroesSlugRouteImport } from './routes/heroes.$slug'
 import { Route as ScientistsIndexRouteImport } from './routes/scientists.index'
@@ -81,6 +84,11 @@ const ContactRoute = ContactRouteImport.update({
 const CountriesRoute = CountriesRouteImport.update({
   id: '/countries',
   path: '/countries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmpiresRoute = EmpiresRouteImport.update({
+  id: '/empires',
+  path: '/empires',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FirstWahiRoute = FirstWahiRouteImport.update({
@@ -188,6 +196,16 @@ const CountriesSlugRoute = CountriesSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => CountriesRoute,
 } as any)
+const EmpiresIndexRoute = EmpiresIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => EmpiresRoute,
+} as any)
+const EmpiresSlugRoute = EmpiresSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => EmpiresRoute,
+} as any)
 const HeroesIndexRoute = HeroesIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -218,6 +236,7 @@ export interface FileRoutesByFullPath {
   '/battles': typeof BattlesRoute
   '/contact': typeof ContactRoute
   '/countries': typeof CountriesRouteWithChildren
+  '/empires': typeof EmpiresRouteWithChildren
   '/first-wahi': typeof FirstWahiRoute
   '/golden-age': typeof GoldenAgeRoute
   '/heroes': typeof HeroesRouteWithChildren
@@ -238,9 +257,11 @@ export interface FileRoutesByFullPath {
   '/umayyad': typeof UmayyadRoute
   '/videos': typeof VideosRoute
   '/countries/$slug': typeof CountriesSlugRoute
+  '/empires/$slug': typeof EmpiresSlugRoute
   '/heroes/$slug': typeof HeroesSlugRoute
   '/scientists/$slug': typeof ScientistsSlugRoute
   '/countries/': typeof CountriesIndexRoute
+  '/empires/': typeof EmpiresIndexRoute
   '/heroes/': typeof HeroesIndexRoute
   '/scientists/': typeof ScientistsIndexRoute
 }
@@ -270,9 +291,11 @@ export interface FileRoutesByTo {
   '/umayyad': typeof UmayyadRoute
   '/videos': typeof VideosRoute
   '/countries/$slug': typeof CountriesSlugRoute
+  '/empires/$slug': typeof EmpiresSlugRoute
   '/heroes/$slug': typeof HeroesSlugRoute
   '/scientists/$slug': typeof ScientistsSlugRoute
   '/countries': typeof CountriesIndexRoute
+  '/empires': typeof EmpiresIndexRoute
   '/heroes': typeof HeroesIndexRoute
   '/scientists': typeof ScientistsIndexRoute
 }
@@ -286,6 +309,7 @@ export interface FileRoutesById {
   '/battles': typeof BattlesRoute
   '/contact': typeof ContactRoute
   '/countries': typeof CountriesRouteWithChildren
+  '/empires': typeof EmpiresRouteWithChildren
   '/first-wahi': typeof FirstWahiRoute
   '/golden-age': typeof GoldenAgeRoute
   '/heroes': typeof HeroesRouteWithChildren
@@ -306,9 +330,11 @@ export interface FileRoutesById {
   '/umayyad': typeof UmayyadRoute
   '/videos': typeof VideosRoute
   '/countries/$slug': typeof CountriesSlugRoute
+  '/empires/$slug': typeof EmpiresSlugRoute
   '/heroes/$slug': typeof HeroesSlugRoute
   '/scientists/$slug': typeof ScientistsSlugRoute
   '/countries/': typeof CountriesIndexRoute
+  '/empires/': typeof EmpiresIndexRoute
   '/heroes/': typeof HeroesIndexRoute
   '/scientists/': typeof ScientistsIndexRoute
 }
@@ -323,6 +349,7 @@ export interface FileRouteTypes {
     | '/battles'
     | '/contact'
     | '/countries'
+    | '/empires'
     | '/first-wahi'
     | '/golden-age'
     | '/heroes'
@@ -343,9 +370,11 @@ export interface FileRouteTypes {
     | '/umayyad'
     | '/videos'
     | '/countries/$slug'
+    | '/empires/$slug'
     | '/heroes/$slug'
     | '/scientists/$slug'
     | '/countries/'
+    | '/empires/'
     | '/heroes/'
     | '/scientists/'
   fileRoutesByTo: FileRoutesByTo
@@ -375,9 +404,11 @@ export interface FileRouteTypes {
     | '/umayyad'
     | '/videos'
     | '/countries/$slug'
+    | '/empires/$slug'
     | '/heroes/$slug'
     | '/scientists/$slug'
     | '/countries'
+    | '/empires'
     | '/heroes'
     | '/scientists'
   id:
@@ -390,6 +421,7 @@ export interface FileRouteTypes {
     | '/battles'
     | '/contact'
     | '/countries'
+    | '/empires'
     | '/first-wahi'
     | '/golden-age'
     | '/heroes'
@@ -410,9 +442,11 @@ export interface FileRouteTypes {
     | '/umayyad'
     | '/videos'
     | '/countries/$slug'
+    | '/empires/$slug'
     | '/heroes/$slug'
     | '/scientists/$slug'
     | '/countries/'
+    | '/empires/'
     | '/heroes/'
     | '/scientists/'
   fileRoutesById: FileRoutesById
@@ -426,6 +460,7 @@ export interface RootRouteChildren {
   BattlesRoute: typeof BattlesRoute
   ContactRoute: typeof ContactRoute
   CountriesRoute: typeof CountriesRouteWithChildren
+  EmpiresRoute: typeof EmpiresRouteWithChildren
   FirstWahiRoute: typeof FirstWahiRoute
   GoldenAgeRoute: typeof GoldenAgeRoute
   HeroesRoute: typeof HeroesRouteWithChildren
@@ -503,6 +538,13 @@ declare module '@tanstack/react-router' {
       path: '/countries'
       fullPath: '/countries'
       preLoaderRoute: typeof CountriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/empires': {
+      id: '/empires'
+      path: '/empires'
+      fullPath: '/empires'
+      preLoaderRoute: typeof EmpiresRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/first-wahi': {
@@ -652,6 +694,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CountriesSlugRouteImport
       parentRoute: typeof CountriesRoute
     }
+    '/empires/': {
+      id: '/empires/'
+      path: '/'
+      fullPath: '/empires/'
+      preLoaderRoute: typeof EmpiresIndexRouteImport
+      parentRoute: typeof EmpiresRoute
+    }
+    '/empires/$slug': {
+      id: '/empires/$slug'
+      path: '/$slug'
+      fullPath: '/empires/$slug'
+      preLoaderRoute: typeof EmpiresSlugRouteImport
+      parentRoute: typeof EmpiresRoute
+    }
     '/heroes/': {
       id: '/heroes/'
       path: '/'
@@ -697,6 +753,19 @@ const CountriesRouteWithChildren = CountriesRoute._addFileChildren(
   CountriesRouteChildren,
 )
 
+interface EmpiresRouteChildren {
+  EmpiresSlugRoute: typeof EmpiresSlugRoute
+  EmpiresIndexRoute: typeof EmpiresIndexRoute
+}
+
+const EmpiresRouteChildren: EmpiresRouteChildren = {
+  EmpiresSlugRoute: EmpiresSlugRoute,
+  EmpiresIndexRoute: EmpiresIndexRoute,
+}
+
+const EmpiresRouteWithChildren =
+  EmpiresRoute._addFileChildren(EmpiresRouteChildren)
+
 interface HeroesRouteChildren {
   HeroesSlugRoute: typeof HeroesSlugRoute
   HeroesIndexRoute: typeof HeroesIndexRoute
@@ -733,6 +802,7 @@ const rootRouteChildren: RootRouteChildren = {
   BattlesRoute: BattlesRoute,
   ContactRoute: ContactRoute,
   CountriesRoute: CountriesRouteWithChildren,
+  EmpiresRoute: EmpiresRouteWithChildren,
   FirstWahiRoute: FirstWahiRoute,
   GoldenAgeRoute: GoldenAgeRoute,
   HeroesRoute: HeroesRouteWithChildren,
