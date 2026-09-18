@@ -18,7 +18,7 @@ const SECTIONS: { icon: typeof BookOpen; title: string; desc: string; tag: strin
   { icon: Sword, title: "Heroes of Islam", desc: "Khalid ibn al-Walid, Salahuddin, Muhammad Al-Fatih, and more.", tag: "Legends", to: "/heroes" },
   { icon: FlaskConical, title: "Golden Age Science", desc: "Algorithms, early robotics, optics, clinical surgery, and the House of Wisdom.", tag: "Science", to: "/golden-age" },
   { icon: Globe2, title: "Islamic Countries", desc: "Interactive atlas of nations, mosques, dynasties, and scholars.", tag: "Atlas", to: "/countries" },
-  { icon: Video, title: "Documentaries", desc: "Cinematic animated videos for every era and every age group.", tag: "Watch", to: "/videos" },
+  { icon: Video, title: "Documentaries", desc: "From Al-Andalus to Baghdad, exploring the Ottomans, Mughals, and the great empires of Islam.", tag: "Watch", to: "/videos" },
   { icon: Brain, title: "Interactive Quiz", desc: "MCQs, guess-the-person, timeline ordering, badges, leaderboard.", tag: "Play", to: "/quiz" },
   { icon: Users, title: "Companions & Scholars", desc: "Biographies of Sahaba, Ahl al-Bayt, Imams, muhaddithin, and mujaddidin.", tag: "People", to: "/scholars" },
   { icon: Sparkles, title: "AI History Assistant", desc: "Ask questions about Islamic history — answered from verified sources with citations.", tag: "New", to: "/assistant" },

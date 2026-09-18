@@ -20,7 +20,9 @@ const NAV_LINKS: { label: string; to: string }[] = [
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -31,6 +33,7 @@ export function Navbar() {
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
+    localStorage.setItem("theme", dark ? "dark" : "light");
   }, [dark]);
 
   return (
@@ -79,12 +82,9 @@ export function Navbar() {
           >
             <Search className="h-4 w-4" />
           </Link>
-          <button
-            aria-label="Language"
-            className="hidden sm:grid h-10 w-10 place-items-center rounded-full text-foreground/80 hover:bg-accent transition-colors"
-          >
-            <LanguageSwitcher/> {/* here Lanuguages used before dropdown feature*/}
-          </button>
+          <div className="hidden sm:block">
+          <LanguageSwitcher />
+        </div>
           <button
             aria-label="Toggle theme"
             onClick={() => setDark((d) => !d)}
