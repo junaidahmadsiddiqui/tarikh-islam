@@ -8,7 +8,7 @@ export type Entry = {
 };
 
 export type Category = {
-  id: "scientists" | "heroes" | "countries";
+  id: "scientists" | "heroes" | "countries" | "empires";
   path: string;
   navLabel: string;
   title: string;
@@ -141,6 +141,68 @@ const countries: Entry[] = [
   },
 ];
 
+const empires: Entry[] = [
+  {
+    slug: "umayyad",
+    name: "Umayyad Caliphate",
+    subtitle: "The First Great Islamic Empire",
+    era: "661 – 750 CE",
+    summary:
+      "The first great Islamic empire, stretching from Damascus to Córdoba.",
+    sections: [],
+  },
+
+  {
+    slug: "abbasid",
+    name: "Abbasid Caliphate",
+    subtitle: "The Golden Age of Islamic Civilization",
+    era: "750 – 1258 CE",
+    summary:
+      "A major center of knowledge, science, culture, and Islamic civilization.",
+    sections: [],
+  },
+
+  {
+    slug: "ottoman",
+    name: "Ottoman Empire",
+    subtitle: "A Six-Century Islamic Empire",
+    era: "1299 – 1922 CE",
+    summary:
+      "One of the longest-lasting Islamic empires in history.",
+    sections: [],
+  },
+
+  {
+    slug: "mughal",
+    name: "Mughal Empire",
+    subtitle: "The Great Islamic Empire of South Asia",
+    era: "1526 – 1857 CE",
+    summary:
+      "A major Islamic empire that shaped the history, culture, and architecture of South Asia.",
+    sections: [],
+  },
+
+  {
+    slug: "fatimid",
+    name: "Fatimid Caliphate",
+    subtitle: "Caliphate of North Africa and Egypt",
+    era: "909 – 1171 CE",
+    summary:
+      "A major caliphate centered in North Africa and Egypt.",
+    sections: [],
+  },
+
+  {
+    slug: "ayyubid",
+    name: "Ayyubid Dynasty",
+    subtitle: "The Dynasty of Salahuddin",
+    era: "1171 – 1260 CE",
+    summary:
+      "The dynasty founded by Salahuddin that ruled Egypt, Syria, and surrounding regions.",
+    sections: [],
+  },
+];
+
 export const CATEGORIES: Record<Category["id"], Category> = {
   scientists: {
     id: "scientists",
@@ -178,4 +240,22 @@ export const CATEGORIES: Record<Category["id"], Category> = {
     intro: "Explore Muslim-majority countries — their history, sacred sites, dynasties, and contributions to Islamic civilization.",
     entries: countries,
   },
+    empires: {
+    id: "empires",
+    path: "/empires",
+    navLabel: "Empires",
+    title: "Islamic Empires — Tarikh-ul-Islam",
+    description:
+      "Explore the great empires and dynasties that shaped Islamic civilization across centuries.",
+    eyebrow: "Dynasties",
+    heroTitle: "Islamic Empires",
+    heroSubtitle: "The great dynasties that shaped the Islamic world.",
+    intro:
+      "Explore the great empires and dynasties that shaped Islamic civilization across centuries.",
+    entries: empires,
+  },
 };
+
+
+
+
