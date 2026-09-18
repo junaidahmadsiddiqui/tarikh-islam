@@ -48,8 +48,8 @@ export default function LanguageSwitcher() {
                 aria-label="Change language"
                 aria-expanded={isOpen}
                 className="flex h-10 w-10 items-center justify-center rounded-full
-                   text-[#1E2530] transition-all duration-200
-                   hover:bg-[#F5F0E8] hover:text-[#0E4237]
+                   text-foreground/80 transition-all duration-200
+                   hover:bg-accent hover:text-foreground
                    focus:outline-none focus:ring-2 focus:ring-[#C4983E]"
             >
                 <Languages size={19} strokeWidth={1.8} />
