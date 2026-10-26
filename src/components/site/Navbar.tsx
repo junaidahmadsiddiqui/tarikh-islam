@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Moon, Sun, Search, Languages, Sparkles } from "lucide-react";
+import { Menu, X, Moon, Sun, Search, ArrowUpRight, Languages, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -46,9 +46,16 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2.5 group">
-          <div className="relative grid h-10 w-10 place-items-center rounded-xl bg-emerald-gradient shadow-gold">
-            <Sparkles className="h-5 w-5 text-gold" />
+          <div className="relative h-10 w-10 shrink-0 overflow-visible">
+            <img
+              src="/favicon.ico"
+              alt="Tarikh-ul-Islam"
+              className="h-full w-full rounded-full object-contain
+                drop-shadow-[0_0_4px_rgba(212,175,55,0.55)]
+                dark:drop-shadow-[0_0_6px_rgba(212,175,55,0.7)]"
+            />
           </div>
+
           <div className="flex flex-col leading-none">
             <span className="font-display text-lg font-bold tracking-tight text-foreground">
               Tarikh
@@ -83,8 +90,8 @@ export function Navbar() {
             <Search className="h-4 w-4" />
           </Link>
           <div className="hidden sm:block">
-          <LanguageSwitcher />
-        </div>
+            <LanguageSwitcher />
+          </div>
           <button
             aria-label="Toggle theme"
             onClick={() => setDark((d) => !d)}
@@ -92,12 +99,20 @@ export function Navbar() {
           >
             {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
+
+          
           <Link
             to="/timeline"
-            className="hidden md:inline-flex items-center rounded-full bg-emerald-gradient px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-elegant transition-transform hover:-translate-y-0.5"
+            
+            className="group hidden md:inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-emerald-400/40 bg-gradient-to-b from-emerald-500 to-emerald-700 px-5 py-3 text-sm font-semibold text-white shadow-[0_4px_0_#065F46,0_6px_12px_rgba(0,0,0,0.14),inset_0_1px_0_rgba(255,255,255,0.22)] transition-[transform,box-shadow] duration-150 ease-out hover:translate-y-[3px] hover:shadow-[0_1px_0_#065F46,inset_0_2px_4px_rgba(0,0,0,0.2)] active:translate-y-[4px] active:shadow-[0_0px_0_#065F46,inset_0_2px_4px_rgba(0,0,0,0.25)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
+
+
           >
-            Start Learning
+            <span className="relative z-10">Start Learning</span>
+            <ArrowUpRight className="relative z-10 h-4 w-4 shrink-0 text-gold transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
+
+
           <button
             aria-label="Menu"
             className="xl:hidden grid h-10 w-10 place-items-center rounded-full hover:bg-accent"
