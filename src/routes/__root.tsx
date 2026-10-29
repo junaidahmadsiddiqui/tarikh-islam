@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import appCss from "../styles.css?url";
+import { SmoothScroll } from "@/components/site/SmoothScroll";
 
 
 function NotFoundComponent() {
@@ -36,7 +37,7 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
@@ -80,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "An interactive, source-referenced platform for learning Islamic history: Seerah, Khulafa Rashidin, empires, heroes, sciences, and more." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      
+
       { name: "twitter:title", content: "Tarikh-ul-Islam — Explore the Legacy of Islam" },
       { name: "twitter:description", content: "An interactive, source-referenced platform for learning Islamic history: Seerah, Khulafa Rashidin, empires, heroes, sciences, and more." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2a2a0672-db2b-460b-9a50-412c491e948d/id-preview-9b44a77f--7d4e9538-679f-4671-ba79-2b986b5502da.lovable.app-1784869050146.png" },
@@ -118,8 +119,10 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <SmoothScroll>
+        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+        <Outlet />
+      </SmoothScroll>
     </QueryClientProvider>
   );
 }
