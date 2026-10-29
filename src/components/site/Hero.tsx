@@ -3,14 +3,20 @@ import { motion } from "framer-motion";
 import { ArrowRight, Play, Search, Sparkles } from "lucide-react";
 import heroImg from "@/assets/hero-islamic.jpg";
 
+// Fixed (seeded) values: server aur browser dono mein same, isliye hydration mismatch nahi hoga.
+const seeded = (i: number, n: number) => {
+  const x = Math.sin(i * 12.9898 + n * 78.233) * 43758.5453;
+  return Math.round((x - Math.floor(x)) * 100) / 100;
+};
 
 const STARS = Array.from({ length: 40 }, (_, i) => ({
   id: i,
-  top: Math.random() * 100,
-  left: Math.random() * 100,
-  size: Math.random() * 2 + 1,
-  delay: Math.random() * 3,
+  top: seeded(i, 1) * 100,
+  left: seeded(i, 2) * 100,
+  size: seeded(i, 3) * 2 + 1,
+  delay: seeded(i, 4) * 3,
 }));
+
 
 export function Hero() {
   return (
